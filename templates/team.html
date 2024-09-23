@@ -1,0 +1,234 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>home-legal adviser</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+ <!-- Vendor CSS Files -->
+ <link href="{% static '/assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+ <link href="{% static '/assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+ <link href="{% static '/assets/vendor/aos/aos.css'%}" rel="stylesheet">
+ <link href="{% static '/assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+ <link href="{% static '/assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+ <!-- Main CSS File -->
+ <link href="{% static '/assets/css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: QuickStart
+  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">Legal Adviser</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          
+          </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="testimonials" class="testimonials section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Meet our team</h2>
+          <p>The developers who work behind this app</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 1
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+ui/ux developer, front-end developer                  </p>
+                  <div class="profile mt-auto">
+                    <img src="{% static '/assets/img/testimonial/Hareeshma.jpg' %}" class="testimonial-img" alt="">
+                    <h3>Hareeshma.S</h3>
+                    <h4>Designer</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Back-end developer
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="{% static '/assets/img/testimonial/Akshay.jpg' %}" class="testimonial-img" alt="">
+                    <h3>Akshay.T</h3>
+                    <h4>Developer</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Data analysis/Research
+                  </p>
+                  <div class="profile mt-auto">
+                    <img src="{% static '/assets/img/testimonial/Athul.jpg' %}" class="testimonial-img" alt="">
+                    <h3>Athul.K</h3>
+                    <h4>Developer</h4>
+                  </div>
+                </div>
+              </div><!-- End testimonial item -->
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+  
+      </section><!-- /Testimonials Section -->
+
+   
+
+   
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+            <span class="sitename">Legal adviser</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>AI Artisans</p>
+            <p>NSTI Calicut</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="service">Services</a></li>
+            
+            <li><a href="privacy">Privacy policy</a></li>
+          </ul>
+        </div>
+
+      
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Legal Advider</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="team">AI Artisans</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+ 
+  <!-- Vendor JS Files -->
+  <script src="{% static '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static '/assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static '/assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static '/assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static '/assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static '/assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
